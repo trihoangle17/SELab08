@@ -1,0 +1,7 @@
+@page
+@model SchoolManagement.Razor.Pages.Students.IndexModel
+@{ ViewData["Title"] = "Students"; }
+<h1>Students — Razor Pages</h1>
+<p>Records are loaded from SQL Server through SchoolContext.</p>
+<table class="table"><thead><tr><th>ID</th><th>Full name</th><th>Email</th><th>Enrollment date</th></tr></thead>
+<tbody>@foreach (var student in Model.Students) { <tr><td>@student.StudentId</td><td>@student.FullName</td><td>@student.Email</td><td>@student.EnrollmentDate.ToShortDateString()</td></tr> }</tbody></table>

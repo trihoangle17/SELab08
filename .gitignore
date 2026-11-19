@@ -1,0 +1,16 @@
+**/bin/
+**/obj/
+**/wwwroot/lib/
+.vs/
+.vscode/
+.idea/
+.tools/
+library_helpers/
+setup_lab8.py
+create_report.py
+*.user
+*.suo
+*.db
+*.mdf
+*.ldf
+SELab08-upload.zip
